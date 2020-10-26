@@ -95,7 +95,7 @@ _all_methods = [
     (pd.DataFrame, frame_data, operator.methodcaller("query", "A == 1")),
     pytest.param(
         (pd.DataFrame, frame_data, operator.methodcaller("eval", "A + 1")),
-        marks=not_implemented_mark,
+        #marks=not_implemented_mark,
     ),
     (pd.DataFrame, frame_data, operator.methodcaller("select_dtypes", include="int")),
     (pd.DataFrame, frame_data, operator.methodcaller("assign", b=1)),
